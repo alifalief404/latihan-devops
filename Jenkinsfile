@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/alifalief404/latihan-devops.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Build aplikasi...'
